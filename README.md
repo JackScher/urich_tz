@@ -5,4 +5,6 @@
     source venv/bin/activate
     pip install -r requirements.txt
     cd app
+    ./manage.py makemigrations
+    ./manage.py migrate
     ./manage.py runserver
